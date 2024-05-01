@@ -18,11 +18,6 @@ class Base(DeclarativeBase):
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///cafes.db"
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
-# #initialised the Flask API manager
-# manager = APIManager(app, session=session)
-# # To explicitly specify which methods should be allowed for the report-closed endpoint,
-# # pass a list as the value of keyword argument methods:
-# manager.create_api(report-closed, methods=['DELETE'])
 
 
 # Cafe TABLE Configuration
